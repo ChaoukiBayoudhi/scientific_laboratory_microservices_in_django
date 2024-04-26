@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'exprimentation_app',
+    'exprementation_app',
     'rest_framework',
 ]
 
@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'exprimentation_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'exprementation_db',
+        'USER':'user01', #postgres
+        'PASSWORD':'user01',
+        'HOST':'localhost', #'127.0.0.1'
+        'PORT':5432
     }
 }
 
